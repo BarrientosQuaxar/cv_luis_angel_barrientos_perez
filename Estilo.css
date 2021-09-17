@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo1 {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background:#A0D9D9;
+    /* fallback for old browsers */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}/*Se establecio que la navegación se encuentre a la derecha en la parte superior*/
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}/*La eqitueta nav fues establecida para navegar dentro de la página*/
+
+nav > a:hover{
+    text-decoration: underline;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    justify-content: left;
+    flex-direction: column;
+    text-align: center;
+    text-align: justify;
+   
+}
+
+.principal{
+
+display: flex;
+width: 100%;
+
+}
+
+
+
+.personal{
+  
+  width: 55%;
+  margin-bottom: 15px;
+}
+.imagen-perfil{
+  width: 30%;
+   
+    border-radius:150px;
+    border:3px solid #666;
+   
+   
+
+}/*Se establecio la configuración de la foto del perfil*/
+
+
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-información-educativa{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-conocimiento{
+    width: 15%;
+}
+
+.sobre-información-educativa .contenido-textos{
+    width: 58%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.laboral{
+    background: #D9C589;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.linea-tiempo {
+    position: relative;
+    width: 500px;
+    max-width: 95vw;
+    height: 100%;
+    font-family: Arial;
+   
+    margin: 0 auto;
+    justify-content: center;
+  align-items: center;
+  }
+  
+  .linea-tiempo::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #000;
+    left: 50%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .momento {
+    position: relative;
+    width: 45%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .momento:nth-child(even) {
+    left: 55%;
+  }
+  
+  .momento::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 10px);
+    right: calc(-11.11% - 11.5px);
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .momento:nth-child(even)::after {
+    left: calc(-11.11% - 8.5px);
+  }
+  
+  .momento h3 {
+    margin: 10px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .momento .descripcion {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  
+  .momento .descripcion::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: calc(50% + 10px);
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #eee;
+    text-align: center;
+  }
+  
+  .momento:nth-child(even) .descripcion {
+    background-color: #3393FE;
+    color: white;
+  }
+  
+  .momento:nth-child(even) .descripcion::after{
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #3393FE;
+    border-left: none;
+  }
+
+
+
+  
+.servicio-cont{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicio-ind{
+  width: 28%;
+  text-align: center;
+}
+
+.servicio-ind img{
+  width: 90%;
+}
+
+.servicio-ind h3{
+  margin: 10px 0;
+}
+
+.servicio-ind p{
+  font-weight: 300;
+  text-align: justify;
+}
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+
+.skills{
+  background: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.titu {
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.area{
+  background: #D9C589;
+
+}
+
+
+form{
+  padding: 60px;
+  max-width: 400px;
+  background-color: #8f8c8c;
+  margin: 0 auto;
+}
+
+form input, form textarea{
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
+}
+
+form button {
+	display: block;
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+}
+
+
+
+footer {
+	align-items: center;
+	background-color: #45858C;
+	bottom: 0;
+	color: #ffffff;
+	display: flex;
+	
+	height: 50px;
+	justify-content: center;
+	position: static;
+	text-transform: uppercase;
+	width:100%;
+	z-index: 1;
+}
+.mens{
+
+  display: flex;
+  width: 100%;
+  
+  }
+
+.mensaje{
+  background: #5e4df8;
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+width: 100%;
+}
+.butto {
+	display: block;
+	background-color: #ffffff;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+}
